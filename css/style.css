@@ -302,6 +302,7 @@ a:hover, a:active, a:focus {
 
 #particles-js {
   position: absolute;
+  color: #FFEBCD;
   width: 100%;
   height: 100vh;
   top: 0;
