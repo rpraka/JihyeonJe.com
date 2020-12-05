@@ -45,7 +45,7 @@ h3 {
 }
 
 h4 {
-  color: #666;
+  color: #FFEBCD;
   font-size: 20px;
   font-weight: normal;
   letter-spacing: 2px;
@@ -280,7 +280,7 @@ a:hover, a:active, a:focus {
 }
 
 .main-home {
-  background: url('../images/home-bg.png') no-repeat;
+  background: url('../images/untitled1.jpg') no-repeat;
   height: 100vh;
 }
 
@@ -309,7 +309,7 @@ a:hover, a:active, a:focus {
 }
 
 #home h4 {
-  color: #bfba55;
+  color: #FFEBCD;
 }
 
 #home .btn {
