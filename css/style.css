@@ -285,7 +285,7 @@ a:hover, a:active, a:focus {
 }
 
 .main-home {
-  background: url('../images/untitled1.jpg') no-repeat;
+  background-color: #000000;
   height: 100vh;
 }
 
@@ -315,7 +315,7 @@ a:hover, a:active, a:focus {
 }
 
 #home h2 {
-  font-size: 170px;	
+  font-size: 150px;	
   color: #ffffff;
 }
 
