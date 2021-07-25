@@ -271,7 +271,7 @@ a:hover, a:active, a:focus {
 #home {
     background-size: cover;
     background-position: center center;
-    color: #000000;
+    color: #d9655f;
     display: -webkit-box;
     display: -webkit-flex;
      display: -ms-flexbox;
@@ -285,7 +285,7 @@ a:hover, a:active, a:focus {
 }
 
 .main-home {
-  background-color: #000000;
+  background-color: #d9655f;
   height: 100vh;
 }
 
@@ -315,8 +315,8 @@ a:hover, a:active, a:focus {
 }
 
 #home h2 {
-  font-size: 150px;	
-  color: #ffffff;
+  font-size: 130px;	
+  color: #98f5e1;
 }
 
 #home .btn {
