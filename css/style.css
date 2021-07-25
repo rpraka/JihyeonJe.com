@@ -15,9 +15,7 @@ body {
 /*---------------------------------------
     Typorgraphy              
 -----------------------------------------*/
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap');
-</style>
+
 
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Source Sans Pro', sans-serif;
@@ -27,7 +25,9 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1 {
-    font-size: 46px;
+    color: #ffffff;
+    text-align: left;
+    font-size: 100px;
     padding-bottom: 14px;
     margin-bottom: 0px;
 }
@@ -280,7 +280,7 @@ a:hover, a:active, a:focus {
 }
 
 .main-home {
-  background: url('../images/untitled1.jpg') no-repeat;
+  
   height: 100vh;
 }
 
