@@ -18,7 +18,7 @@ body {
 
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: bold;
   letter-spacing: 0.5px;
@@ -280,7 +280,7 @@ a:hover, a:active, a:focus {
 }
 
 .main-home {
-  
+  color: #000000;
   height: 100vh;
 }
 
