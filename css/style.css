@@ -18,9 +18,11 @@ body {
 /*---------------------------------------
     Typorgraphy              
 -----------------------------------------*/
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap');
-</style>
+
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap" rel="stylesheet"><style>
 
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Source Sans Pro', sans-serif;
