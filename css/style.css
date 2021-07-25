@@ -281,7 +281,7 @@ a:hover, a:active, a:focus {
     -ms-flex-align: center;
      align-items: center;
     position: relative;
-    text-align: center;
+    text-align: left;
 }
 
 .main-home {
@@ -314,8 +314,9 @@ a:hover, a:active, a:focus {
   left: 0;
 }
 
-#home h4 {
-  color: #FFEBCD;
+#home h2 {
+  font-size: 170px;	
+  color: #ffffff;
 }
 
 #home .btn {
