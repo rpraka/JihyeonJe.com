@@ -4,7 +4,7 @@ http://www.tooplate.com/view/2085-neuron
 */
 
 body {
-		background: #ffffff;
+		background: #000000;
     font-family: 'Lora', serif;
     font-style: normal;
 		font-weight: 300;
@@ -19,14 +19,15 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Poppins', sans-serif;
+
   font-style: normal;
   font-weight: bold;
   letter-spacing: 0.5px;
 }
 
 h1 {
-    color: #000000;
-    font-size: 100px;
+    color: #ffffff;
+    font-size: 46px;
     padding-bottom: 14px;
     margin-bottom: 0px;
 }
@@ -146,7 +147,7 @@ a:hover, a:active, a:focus {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  background: none repeat scroll 0 0 #ffffff;
+  background: none repeat scroll 0 0 #000000;
 }
 
 .sk-spinner-wordpress.sk-spinner {
@@ -313,8 +314,8 @@ a:hover, a:active, a:focus {
 }
 
 #home .btn {
-  background: #ffffff;
-  border: 2px solid #ffffff;
+  background: #000000;
+  border: 2px solid #000000;
   border-radius: 100px;
   color: #444;
   font-family: 'Merriweather', serif;
@@ -329,8 +330,8 @@ a:hover, a:active, a:focus {
 
 #home .btn:hover {
   background: transparent;
-  border-color: #ffffff;
-  color: #ffffff;
+  border-color: #000000;
+  color: #000000;
 }
 
 
@@ -373,7 +374,7 @@ a:hover, a:active, a:focus {
 }
 
 #gallery .gallery-thumb {
-  background-color: #ffffff;
+  background-color: #000000;
   box-shadow: 0px 1px 2px 0px rgba(90, 91, 95, 0.15);
   cursor: pointer;
   display: block;
@@ -434,7 +435,7 @@ a:hover, a:active, a:focus {
   background: #bfba55;
   border-radius: 100px;
   border: none;
-  color: #ffffff;
+  color: #000000;
   font-weight: bold;
   transition: all 0.4s ease-in-out;
 }
@@ -518,7 +519,7 @@ a:hover, a:active, a:focus {
 .blog-post-des .btn:hover {
   background: #bfba55;
   border-color: transparent;
-  color: #ffffff;
+  color: #000000;
 }
 
 .blog-author {
@@ -593,7 +594,7 @@ a:hover, a:active, a:focus {
   background: #bfba55;
   border-radius: 100px;
   border: none;
-  color: #ffffff;
+  color: #000000;
   font-weight: bold;
   transition: all 0.4s ease-in-out;
 }
@@ -601,7 +602,7 @@ a:hover, a:active, a:focus {
 .blog-comment-form input[type="submit"]:hover {
   background: #333;
   border-color: transparent;
-  color: #ffffff;
+  color: #000000;
 }
 
 
@@ -637,13 +638,13 @@ a:hover, a:active, a:focus {
 
 footer {
     background: #000;
-    color: #ffffff;
+    color: #000000;
     padding: 80px 0px;
     position: relative;
 }
 
 footer .col-md-4 .fa {
-  color: #ffffff;
+  color: #000000;
   padding-right: 8px;
 }
 
@@ -661,7 +662,7 @@ footer .footer-copyright {
 
 /* Back top */
 .go-top {
-  background-color: #ffffff;
+  background-color: #000000;
   box-shadow: 1px 1.732px 12px 0px rgba( 0, 0, 0, .14 ), 1px 1.732px 3px 0px rgba( 0, 0, 0, .12 );
   transition : all 1s ease;
   bottom: 2em;
@@ -680,7 +681,7 @@ footer .footer-copyright {
 
 .go-top:hover {
     background: #bfba55;
-    color: #ffffff;
+    color: #000000;
 }
 
 
