@@ -1,3 +1,10 @@
+
+AOS.init({
+  duration: 500,
+  easing: 'ease-out-quart',
+  once: true
+});
+
 /**
  * SmoothScroll
  * This helper script created by DWUser.com.  Copyright 2013 DWUser.com.  
