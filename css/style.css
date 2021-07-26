@@ -92,6 +92,12 @@ a:hover, a:active, a:focus {
   outline: none;
 }
 
+a:link {
+  color: 98f5e1;
+  background-color: transparent;
+  text-decoration: none;
+}
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
