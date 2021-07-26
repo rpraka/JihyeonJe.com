@@ -204,6 +204,7 @@ a:hover, a:active, a:focus {
 .navbar-default {
     background: #d9655f;
     margin: 0 !important;
+    font-weight: bold;
     padding: 18px 0;
 }
 
@@ -219,6 +220,7 @@ a:hover, a:active, a:focus {
 .navbar-default .navbar-nav li a {
     color: #000000;
     font-size: 18px;
+    font-weight: bold;
     letter-spacing: 1px;
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
