@@ -202,13 +202,13 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 .navbar-default {
-    background: #d9655f;
+    background: #bfba55;
     margin: 0 !important;
     padding: 18px 0;
 }
 
 .navbar-default .navbar-brand {
-  color: #555;
+  color: #bfba55;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
@@ -217,7 +217,7 @@ a:hover, a:active, a:focus {
 }
 
 .navbar-default .navbar-nav li a {
-    color: #777;
+    color: #bfba55;
     font-size: 16px;
     letter-spacing: 1px;
     -webkit-transition: all 0.4s ease-in-out;
