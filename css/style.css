@@ -46,6 +46,7 @@ h2,h3 {
 }
 
 h3 {
+  color: #000000;
   font-weight: bold;
   font-size: 19px;
 }
@@ -58,7 +59,7 @@ h4 {
 }
 
 p {
-     
+    color: #000000;
     font-size: 17px;
     font-weight: 300;
     line-height: 26px;
@@ -291,6 +292,7 @@ a:hover, a:active, a:focus {
 .main-home {
   background-color: #d9655f;
   height: 100vh;
+  border: none
 }
 
 .main-about {
@@ -676,7 +678,6 @@ footer .footer-copyright {
 /* Back top */
 .go-top {
   background-color: #d9655f;
-  box-shadow: 1px 1.732px 12px 0px rgba( 0, 0, 0, .14 ), 1px 1.732px 3px 0px rgba( 0, 0, 0, .12 );
   transition : all 1s ease;
   bottom: 2em;
   right: 2em;
