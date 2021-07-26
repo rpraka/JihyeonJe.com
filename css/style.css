@@ -236,6 +236,9 @@ a:link {
     font-weight: bold;
     padding: 18px 0;
 }
+.navbar-default {
+    border-color: #d9655f;
+}
 
 .navbar-default .navbar-brand {
   color: #000000;
