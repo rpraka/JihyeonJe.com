@@ -46,6 +46,7 @@ h2,h3 {
 }
 
 h3 {
+  text-align: right;
   color: #000000;
   font-weight: bold;
   font-size: 19px;
@@ -335,6 +336,10 @@ a:link {
   color: #98f5e1;
 }
 
+#home h3 {
+  font-size: 50px;	
+  color: #000000;
+}
 #home .btn {
   background: #d9655f;
   border: none;
