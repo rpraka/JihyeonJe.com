@@ -1,5 +1,4 @@
 
-document.getElementById("hightlight").style.backgroundPosition = "-100% 0";
 
   /*-------------------------------------------------------------------------------
     PRE LOADER
