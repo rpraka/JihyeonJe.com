@@ -22,6 +22,7 @@ http://www.tooplate.com/view/2085-neuron
 
 <!-- Main css -->
 <link rel="stylesheet" href="css/style.css">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;900&display=swap" rel="stylesheet">
@@ -58,6 +59,7 @@ http://www.tooplate.com/view/2085-neuron
                <ul class="nav navbar-nav navbar-right">
                     <li><a href="index.html">Home</a></li>
                     <li class="active"><a href="about.html">Research</a></li>
+                    <li><a href="fun.html">Creative</a></li>
                     <li><a href="/images/Je_Resume.pdf" target="_blank">Resume</a></li>
                     <li><a href="contact.html">Contact</a></li>
                </ul>
@@ -83,149 +85,258 @@ http://www.tooplate.com/view/2085-neuron
 <!-- About Section -->
 					       
 
+
+
 <section id="about">
- 
-     <div class="container">
-          <div class="row">
-	
-                   
-               	    <div class="blog-post-thumb">
-                         <div class="blog-post-title">
-				<h3><span class="test">High-Throuput Organoid Drug Efficacy Screening Platform</span></h3>
-                         </div>
-                         <div class="blog-post-des">
-                              <p>Clinical treatment of glioblastoma, a disease that kills over 10,000 Americans annually, is limited by the lack of a scalable, physiologically-relevant model for testing therapeutics. Duke iGEM is developing NODES, a high-throughput organoid-based drug screening platform to characterize treatment efficacy in common glioma variants. We designed a non-invasive reporter device that quantifies the drug response of mutation-specific glioma cells in a mini-brain co-culture model, grown in a droplet-based system. Additionally, we modeled our reporter system, which detects oncometabolite levels throughout brain tumor development, to improve device characteristics and developed a machine-learning based image analysis pipeline for organoid screening. To identify the social and ethical implications of our work, we interviewed patients, clinicians, and other stakeholders and integrated their feedback into our design. By recapitulating the brain microenvironment, NODES has the potential to accurately characterize drug responses, offering new hope to patients in their fight against this lethal disease
-						   </p>
-			 <a href="https://2021.igem.org/Team:Duke" class="btn btn-default">Visit Full Project Site</a> 
+     <head>
+          <style>
 
-                         </div>
-                          <div class="blog-post-image">
-                               <center>
-                                   <img src="images/igem.png" style = "width: 60%; heigt: 30vh" class="center"/>
-                               </center>
-                         </div>
-                         <p><b>Combining microfluidics, synthetic biology, tissue engineering, and machine learning to tackle efficient drug screening.</b>  </p>
-                    </div>
-														<div class="blog-post-thumb">
-                         <div class="blog-post-title">
-				<h3><span class="test">Network Optimization with Limited Bioimage Data </span> for Robust Semantic Segmentation</h3>
-                         </div>
-                         <div class="blog-post-des">
-                              <p>Bioimage segmentation is a common but challenging task, especially in dealing with complex biological properties due to closely packed structures, high variation in shapes and sizes, and complex morphology.
-				While deep learning provides an opportunity to tackle previously intractable bioimage analysis tasks, large amounts of annotated data is generally required to train a reliable network.
-				However, curation of a sizable and diverse training dataset is labor intensive and challenging, which limits the development of high accuracy segmentation models on such datasets. 
-				Here we demonstrate that deep learning with adequate framework can be effectively used to tackle challenging computer vision analysis tasks, especially when training data is sparse.</p>
-                             <a href="images/Network Optimization with Limited Bioimage Data for Robust Semantic Segmentation.pdf" class="btn btn-default">See Poster Presentation</a>
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,700);
 
-						   </div>
-                          <div class="blog-post-image">
-                               <center>
-                                   <img src="images/optimization.png" style = "width: 60%; heigt: 30vh" class="center"/>
-                               </center>
-                         </div>
-                         <p><b>DL-based segmentation and 3D reconstruction</b> 3D analysis allows quantitative measurement extraction even from highly sparse and complex data.</p>
-                    </div>
-                    <div class="blog-post-thumb">
-			   
-                         <div class="blog-post-title">
-				<h3><span class="test">DL-based image segmentation and reconstruction</span> pipeline </h3>
-                         </div>
-                         
-                         <div class="blog-post-des">
-                              <p>Sharing deep neural networks and testing the performance of trained networks typically involve a major initial commitment towards one algorithm, before knowing how the network will perform on a different dataset. The major purpose for developng a DL based segmentation tool is to allow immediate access to experiment with AI for image segmentation and the ability to test different trained models near-instantaneously.
-                              The model is pretrained on segmentation tasks for electron microscopy, X-ray microCT and light microscopy data. Through intensive analysis of SBEM and EM data, we were able to track and reconstruct subcellular organelles within neurons, especially focused on interactions between ER and mitochondria. Collectively, our results on the analysis of ER presence and networks within a neuron advances our knowledge on the structural interpretation of organization and interactions of ER in neurons and its significance in cell physiology.</p>
-                              <a href="https://www.biorxiv.org/content/10.1101/2020.03.26.010660v1" class="btn btn-default">Read Manuscript</a> 
-                              <a href="https://academicconnections.ucsd.edu/_files/research-scholars-project-archive/2017/jj.pdf" class="btn btn-default">See Poster Presentation</a>
-                         </div>
-                         <div class="blog-post-image">
-                              <center>
-                                   <img src="images/nca.png" style = "width: 80%; heigt: 80%" class="center">
-                              </center>
-                         </div>
-                         
-                         <p><b>DL-based image segmentation tool.</b> (a)Automatic Segmentation of Organelles in EM Image Stacks All images obtained from SBEM are first converted and appended to an 8-bit MRC stack using IMOD. The sequential images are then aligned in the XY plane. By matching the histograms of the image stack to the first image, the consistency of the stack is maintained (Coltucetal.,2006). After selecting an organelle of interest, a set of organelle-specific images are generated to train a CHM pixel classifier. Such training tiles are extracted from a set of seed points throughout the image stack. When all training images are collected, CHM pixel classifier is trained through numerous bottom-up and top-down steps. The collected data are then combined into a single classifier adjusted to natural resolution. Then, a probability map is generated from previously obtained test set and goes through binarization. The binarized outputs are converted to MRC format and the contours are meshed together to generate a 3D model. 
-                         (b)Three-dimensional reconstruction of cell organelles and ER contact points from image stack of a neuronal cell body. (A) Complete model of ER network from Purkinje cell. (B) Three-dimensional model of the spine showing ER network from electron tomography image stacks. (C) All membranous organelles were reconstructed in a granule cell, color coded as shown in (H). (D and E) A portion of the ER and mitochondria from image (C). Note the contacts between the organelles and ER’s tendency to form a network around mitochondria. (F and G) Single EM image showing a cross-section of the granule cell, demonstrating ER contacts with mitochondria in the plane of the image (F) and with nucleus and membrane(white dotted line, G). (H and I) Sections of 3D model of another granule cell sample. Structural similarity between the network of ER and mitochondria is displayed. (J) Color code for images (C-I). (Scale bars: 500 nm in A,C,D; 400 nm in B, Pixel size: 4.764nm x 4.764nm x 70nm)
-                         (c)MAM contacts analyzed from EM scans of Purkinje and granule cell scans after automatic segmentation </p>
+#rig {
+    max-width:1200px;
+    margin:auto; /*center aligned*/
+    padding:0 0;
+    font-size:0; /* Remember to change it back to normal font size if have captions */
+    list-style:none;
+    background-color:#000;
+    text-align: center;
 
-                    </div>
-               
-                    <div class="blog-post-thumb">
-                         <div class="blog-post-title">
-				<h3><span class="test">Automatized pathomic feature extraction</span> tool for renal biopsy data</h3>
-                         </div>
-                         <div class="blog-post-des">
-                              <p>Quantification of inflammation has always been tricky due to the morphological heterogeneity of inflammatory cells and the subjectivity of the physician performing the operation. Therefore, the development of an automatized segmentation tool for inflammation is crucial in the analysis of biopsy data.
-                              Following the segmentation, pathomic feature extraction (e.g. spatial and structural analysis) can be performed for further analysis. </p>
-                         </div>
-                          <div class="blog-post-image">
-                               <center>
-                                   <img src="images/inflam.png" style = "width: 80%; heigt: 50vh" class="center"/>
-                               </center>
-                         </div>
-                         <p><b>DL-based segmentation of inflammatory cells in biopsy data</b> Inflammatory cells are segmented from H&E scans and overlayed. Following the segmentation, further analysis can be performed to extract additional pathomic features. </p>
-                    </div>
-               
-                    <div class="blog-post-thumb">
-                         <div class="blog-post-title">
-                              <h3>Mathematical and computational analysis of the <span class="test">structure of viral capsids</span></h3>
-                         </div>
-                         
-                         <div class="blog-post-des">
-                              <p> With the capsid, the viral protein shell, viruses conceal their genetic material and can slip inside the host's body (like a Trojan horse!). The goal of the project was to create an applicable structural model of the proteins that compose the capsid to better understand the viral life cycle and infection mechanism.
-                              In order to streamline the process, an importer function to read the protein data from the protein databank (RCSB PDB) was developed. The closeness of the obtained idealized tilings to the structures of considered capsids shows that the proposed approach is general for many structures of small and medium-sized viruses. Such tilings provides a general idea about quasi-equivalence of proteins, thus simplify the internal structure of protein molecules and viral genome. Our model provides a better insight into the protein structures of viral capsid, enabling a further research on virus models that do not comply to the conventional Caspar-and-Klug model. </p>
-                              <a href="https://community.wolfram.com/groups/-/m/t/1378744?p_p_auth=Mj0MOF08" class="btn btn-default">Read More</a>
-                         </div>
-                         <div class="blog-post-image">
-                              <center>
-                                   <img src="images/virus.png"  style = "width: 50%; heigt: 50vh" class="center"/>
-                              </center>
-                         </div>
-                         <p><b>Structural patterns of viral capsid subunits.</b> Model applied to five different types of icosahedral viruses - 3J3I(T=1), 2VF1(T=2), 1JS9(T=3)</p>
-                    </div>
-                    
-                    <div class="blog-post-thumb">
-                         <div class="blog-post-title">
-						     <h3>Development of a <span class="test">fusion nano probe</span> using affibody molecules to target cancer</h3>
-                         </div>
-                         
-                         <div class="blog-post-des">
-                              <p>A novel protein cage nanoparticles, encapsulin, is adequate for the construction of multifunctional drug delivery nanoplatform. Utilizing genetically engineered encapsulin, we develop a selective targeted drug delivery system. </p>
-                         </div>
-                         <div class="blog-post-image">
-                              <center>
-                                   <img src="images/cherry.png"  style = "width: 60%; heigt: 50vh" class="center">
-                              </center>
-                         </div>
-                         <p><b>Targeted drug delivery system utilizing encapsulin<b/><p>
+}
+#rig li {
+    display: inline-block;
+    *display:inline;/*for IE6 - IE7*/
+    width:100%;
+    height:100%;
+    vertical-align:middle;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+        
+/* The wrapper for each item */
+.rig-cell {
+    /*margin:12px;
+    box-shadow:0 0 6px rgba(0,0,0,0.3);*/
+    display:block;
+    position: relative;
+    overflow:hidden;
+}
+        
+/* If have the image layer */
+.rig-img {
+    display:block;
+    width: 100%;
+    height: 100%;
+    border:none;
+    transform:scale(1);
+    transition:all 1s;
+}
 
-                    </div>
-               
-                    <div class="blog-post-thumb">
-                         <div class="blog-post-title">
-                              <h3><span class="test">3D reconstruction and statistical analysis of axons and dendritic spines</span> from EM images</h3>
-                         </div>
-                         
-                         <div class="blog-post-des">
-                              <p>Axon, also known as the nerve fiber, is a long, slender projection of a nerve cell, or neuron, that conducts electrical impulses known as action potentials, away from the nerve cell body. Although the connectivity of axons are crucial in signal transfer between neurons, its structural assembly and trend across the cortex is yet not widely investigated. By utilizing image processing techniques, we look at the structural trend and are able to quantify axon expressions, providing valuable data for further investigation of neuronal activity.</p>
-                              <a href="https://community.wolfram.com/groups/-/m/t/1386698?p_p_auth=Mj0MOF08" class="btn btn-default">Read More</a>
-                         </div>
-                         <div class="blog-post-image">
-                              <center>
-                                   <img src="images/untitled1.jpg"  style = "width: 75%; heigt: 50vh" >
+#rig li:hover .rig-img {
+    transform:scale(1);
+}
+        
+/* If have the overlay layer */
+.rig-overlay {
+    position: absolute;
+    display:block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: #479761;
+    background-size:50px 50px;
+    opacity:0;
+    filter:alpha(opacity=0);/*For IE6 - IE8*/
+    transition:all 0.6s;
+}
+#rig li:hover .rig-overlay {
+    opacity:1;
+}
 
-                                   <img src="images/axon.png"  style = "width: 25%; heigt: 50vh">
-                              </center>
-                         </div>
-                         <p><b>3D reconstruction of neural conections<b/><p>
+/* If have captions */
+.main {
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  text-align: left;
+  top: 30px;
+  left: 230px;
+  font-weight: bold;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
 
-                         
-                    </div>
-                    
-                  
-               
+.rig-text {
+color: white;
+display: flex;
+  font-size: 25px;
+  position: absolute;
+  top: 40%;
+  margin-left: 50%;  
+  font-weight: bold;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+    display:block;
+    
+    color:white;
+    opacity:0;
+    filter:alpha(opacity=0);/*For older IE*/
+    transition:all .3s;
 
-          </div>
-     </div>
+}
+.descr {
+color: white;
+  font-size: 20px;
+  overflow-wrap: break-word; 
+  position: absolute;
+  top: 40%;
+  margin-left: 50%;  
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+    display:block;
+    
+    color:white;
+    opacity:0;
+    filter:alpha(opacity=0);/*For older IE*/
+    transition:all .3s;
+
+}
+
+.area {
+color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 80%;
+  margin-left: 50%;  
+  text-decoration: underline;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+    display:block;
+    
+    color:white;
+    opacity:0;
+    filter:alpha(opacity=0);/*For older IE*/
+    transition:all .3s;
+
+}
+#rig li:hover .rig-text {
+    opacity:0.9;
+    
+}
+
+#rig li:hover .descr {
+    opacity:0.9;
+}
+
+#rig li:hover .area {
+    opacity:0.9;
+}
+
+@media (max-width: 9000px) {
+    #rig li {
+        width:50%;
+    }
+}
+
+@media (max-width: 700px) {
+    #rig li {
+        width:50%;
+    }
+}
+
+@media (max-width: 550px) {
+    #rig li {
+        width:50%;
+    }
+}
+
+
+</style>
+<ul id="rig">
+     <li>
+         <a class="rig-cell" href="igem.html">
+              
+             <img class="rig-img" src="images/igem.png" style="width:800px;height:400px">
+             <span class="rig-overlay"></span>
+             <div class="rig-text">Organoid Drug Screening</div>
+             <span class="area">Read More</span>
+         </a>
+     </li>
+     <li>
+         <a class="rig-cell" href="seg.html">
+          <img class="rig-img" src="images/madox.png" style="width:800px;height:400px">
+          <span class="rig-overlay"></span>
+          <span class="rig-text">Robust Semantic Segmentation</span>
+          <span class="area">Read More</span>
+         </a>
+     </li>
+     <li>
+         <a class="rig-cell" href="sd.html">
+          <img class="rig-img" src="images/sd.png" style="width:800px;height:400px">
+          <span class="rig-overlay"></span>
+          <span class="rig-text">3D Segmentation and Reconstruction</span>
+          <span class="area">Read More</span>
+         </a>
+     </li>
+     <li>
+         <a class="rig-cell" href="inflam.html">
+          <img class="rig-img" src="images/newinflam.png" style="width:800px;height:400px">
+          <span class="rig-overlay"></span>
+          <span class="rig-text">Automatized Pathomic Feature Extraction</span>
+          <span class="area">Read More</span>
+         </a>
+     </li>
+     <li>
+         <a class="rig-cell" href="capsids.html">
+          <img class="rig-img" src="images/viruse.png" style="width:800px;height:400px">
+          <span class="rig-overlay"></span>
+          <span class="rig-text">Viral Capsids</span>
+          <span class="area">Read More</span>
+         </a>
+     </li>
+     <li>
+         <a class="rig-cell" href="probe.html">
+          <img class="rig-img" src="images/nano.png" style="width:800px;height:400px">
+          <span class="rig-overlay"></span>
+          <span class="rig-text">Fusion Nano Probe</span>
+          <span class="area">Read More</span>
+         </a>
+     </li>
+     <li>
+          <a class="rig-cell" href="spine.html">
+
+               <img class="rig-img" src="images/spines.png" style="width:800px;height:400px">
+               <span class="rig-overlay"></span>
+               <span class="rig-text">3D Spine Reconstruction</span>
+               <span class="area">Read More</span>
+              </a>
+     </li>
+     <li>
+          <a class="rig-cell" href="#">
+               <img class="rig-img" src="images/strk.png" style="width:800px;height:400px">
+               <span class="rig-overlay"></span>
+               <span class="rig-text">STARK</span>
+               <span class="area">Coming Soon!</span>
+              </a>
+     </li>
+     
+   </ul>
+   </div>
+   
+
+
+   
 </section>
 
 <!-- Footer Section -->
