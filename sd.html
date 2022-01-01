@@ -30,6 +30,45 @@ http://www.tooplate.com/view/2085-neuron
 <body>
 
 <style>    @import url(https://fonts.googleapis.com/css?family=Raleway:300,700);
+p {
+    text-align: justify;
+}
+
+
+
+/* CSS */
+.button-54 {
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #F92C85;
+  cursor: pointer;
+  border: 3px solid;
+  margin-top: 5px;
+  margin-right: 8px;
+  margin-bottom: 10px;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-54:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .button-54 {
+    padding: 0.25em 0.75em;
+  }
+}
 </style>
 <!-- PRE LOADER -->
 
@@ -55,10 +94,10 @@ http://www.tooplate.com/view/2085-neuron
           <div class="collapse navbar-collapse">
                <ul class="nav navbar-nav navbar-right">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">Research</a></li>
+                    <li class="active"><a href="about.html">Research</a></li>
                     <li><a href="fun.html">Creative</a></li>
                     <li><a href="/images/Je_Resume.pdf" target="_blank">Resume</a></li>
-                    <li class="active"><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                </ul>
           </div>
 
@@ -94,8 +133,6 @@ http://www.tooplate.com/view/2085-neuron
                 <div class="blog-post-des">
                      <p>Sharing deep neural networks and testing the performance of trained networks typically involve a major initial commitment towards one algorithm, before knowing how the network will perform on a different dataset. The major purpose for developng a DL based segmentation tool is to allow immediate access to experiment with AI for image segmentation and the ability to test different trained models near-instantaneously.
                      The model is pretrained on segmentation tasks for electron microscopy, X-ray microCT and light microscopy data. Through intensive analysis of SBEM and EM data, we were able to track and reconstruct subcellular organelles within neurons, especially focused on interactions between ER and mitochondria. Collectively, our results on the analysis of ER presence and networks within a neuron advances our knowledge on the structural interpretation of organization and interactions of ER in neurons and its significance in cell physiology.</p>
-                     <a href="https://www.biorxiv.org/content/10.1101/2020.03.26.010660v1" class="btn btn-default">Read Manuscript</a> 
-                     <a href="https://academicconnections.ucsd.edu/_files/research-scholars-project-archive/2017/jj.pdf" class="btn btn-default">See Poster Presentation</a>
                 </div>
                 <div class="blog-post-image">
                      <center>
@@ -105,7 +142,10 @@ http://www.tooplate.com/view/2085-neuron
                 
                 <p><b>DL-based image segmentation tool.</b> (a)Automatic Segmentation of Organelles in EM Image Stacks All images obtained from SBEM are first converted and appended to an 8-bit MRC stack using IMOD. The sequential images are then aligned in the XY plane. By matching the histograms of the image stack to the first image, the consistency of the stack is maintained (Coltucetal.,2006). After selecting an organelle of interest, a set of organelle-specific images are generated to train a CHM pixel classifier. Such training tiles are extracted from a set of seed points throughout the image stack. When all training images are collected, CHM pixel classifier is trained through numerous bottom-up and top-down steps. The collected data are then combined into a single classifier adjusted to natural resolution. Then, a probability map is generated from previously obtained test set and goes through binarization. The binarized outputs are converted to MRC format and the contours are meshed together to generate a 3D model. 
                 (b)Three-dimensional reconstruction of cell organelles and ER contact points from image stack of a neuronal cell body. (A) Complete model of ER network from Purkinje cell. (B) Three-dimensional model of the spine showing ER network from electron tomography image stacks. (C) All membranous organelles were reconstructed in a granule cell, color coded as shown in (H). (D and E) A portion of the ER and mitochondria from image (C). Note the contacts between the organelles and ER’s tendency to form a network around mitochondria. (F and G) Single EM image showing a cross-section of the granule cell, demonstrating ER contacts with mitochondria in the plane of the image (F) and with nucleus and membrane(white dotted line, G). (H and I) Sections of 3D model of another granule cell sample. Structural similarity between the network of ER and mitochondria is displayed. (J) Color code for images (C-I). (Scale bars: 500 nm in A,C,D; 400 nm in B, Pixel size: 4.764nm x 4.764nm x 70nm)
-                (c)MAM contacts analyzed from EM scans of Purkinje and granule cell scans after automatic segmentation </p>
+                (c)MAM contacts analyzed from EM scans of Purkinje and granule cell scans after automatic segmentation <br> </br>  </p>
+                   
+                <a href="https://www.biorxiv.org/content/10.1101/2020.03.26.010660v1" class="button-54">Read Manuscript</a> 
+                <a href="https://academicconnections.ucsd.edu/_files/research-scholars-project-archive/2017/jj.pdf" class="button-54">See Poster Presentation</a>
 
            </div>
 
