@@ -104,6 +104,13 @@ p {
   border-color: transparent;
 }
 
+h6 {
+  color: #5EBEC4;
+  text-align: left;
+  font-size: 170px;
+  padding-bottom: 18px;
+  margin-bottom: 0px;
+}
 
 /*---------------------------------------
     General               
