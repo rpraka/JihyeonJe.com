@@ -668,7 +668,7 @@ a:link {
 }
 
 #contact input[type="submit"] {
-  background: #479761;
+  background: #5EBEC4;
   border-radius: 100px;
   border: none;
   color: #F92C85;
@@ -753,7 +753,7 @@ a:link {
 }
 
 .blog-post-des .btn:hover {
-  background: #479761;
+  background: #5EBEC4;
   border-color: transparent;
   color: #FDF5DF;
 }
@@ -827,7 +827,7 @@ a:link {
 }
 
 .blog-comment-form input[type="submit"] {
-  background: #479761;
+  background: #5EBEC4;
   border-radius: 100px;
   border: none;
   color: #F92C85;
@@ -915,7 +915,7 @@ footer .footer-copyright {
 }
 
 .go-top:hover {
-    background: #479761;
+    background: #5EBEC4;
     color: #F92C85;
 }
 
@@ -955,8 +955,8 @@ footer .footer-copyright {
 }
 
 .social-icon li a:hover {
-    border-color: #479761;
-    color: #479761;
+    border-color: #5EBEC4;
+    color: #5EBEC4;
     transform: scale(1.1);
 }
 
