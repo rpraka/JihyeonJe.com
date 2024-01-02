@@ -82,8 +82,9 @@ http://www.tooplate.com/view/2085-neuron
 
 <div class="blog-post-title">
   <h1>Selected works</a></h1> 
-  <center><p>I left the cabinet unlocked... maybe you can find some files inside to browse ;)</p></center>
-<br><br><br><br><br>
+  <center><p>I left the cabinet unlocked... maybe you can find some files inside to browse ;) </p></center>
+
+  <br><br><br><br><br>
 </div>
 
 </div>
@@ -382,11 +383,11 @@ http://www.tooplate.com/view/2085-neuron
         box-shadow: 0 0 3px rgb(28, 28, 28);
         height: calc(var(--depth) * 0.8vmin);
         width: calc(var(--depth) * 0.5vmin);
-        background: #f2db59;
+        background: #f2db59b8;
         bottom: 10%;
         left: 50%;
         transform-origin: 50% 100%;
-        transform: translate(-50%, 0) rotateX(90deg);
+        transform: translate(-50%, 0) rotateX(70deg);
       }
       
       .drawer__panel--obj:hover {
@@ -400,21 +401,21 @@ http://www.tooplate.com/view/2085-neuron
         box-shadow: 0 0 3px rgb(28, 28, 28);
         height: calc(var(--depth) * 0.8vmin);
         width: calc(var(--depth) * 0.5vmin);
-        background: #F92C85;
+        background: #f92c85c5;
         bottom: 10%;
         left: 50%;
         transform-origin: 50% 100%;
-        transform: translate(-40%, 0) rotateX(90deg) rotateZ(2deg);
+        transform: translate(-40%, 0) rotateX(70deg) rotateZ(2deg);
       }
       .drawer__panel--obj3 {
         box-shadow: 0 0 3px rgb(28, 28, 28);
         height: calc(var(--depth) * 0.8vmin);
         width: calc(var(--depth) * 0.5vmin);
-        background: #f2d73e;
+        background: #f2d73eb2;
         bottom: 10%;
         left: 50%;
         transform-origin: 50% 100%;
-        transform: translate(-50%, 0) rotateX(90deg) rotateZ(-2deg);
+        transform: translate(-50%, 0) rotateX(70deg) rotateZ(-2deg);
       }
       
       .drawer__panel--obj3:hover {
@@ -424,14 +425,14 @@ http://www.tooplate.com/view/2085-neuron
         margin-top: -10px;
       }
       .drawer__panel--obj4 {
-        box-shadow: 0 0 3px rgb(28, 28, 28);
+        box-shadow: 0 0 4px rgb(28, 28, 28);
         height: calc(var(--depth) * 0.8vmin);
         width: calc(var(--depth) * 0.5vmin);
-        background: #79a1ce;
+        background: #79a1cec0;
         bottom: 10%;
         left: 50%;
         transform-origin: 50% 100%;
-        transform: translate(-50%, 0) rotateX(90deg) ;
+        transform: translate(-50%, 0) rotateX(70deg) ;
       }
       .drawer__panel--obj4:hover {
         box-shadow: 0 0 4px rgb(28, 28, 28);
@@ -443,11 +444,11 @@ http://www.tooplate.com/view/2085-neuron
         box-shadow: 0 0 3px rgb(28, 28, 28);
         height: calc(var(--depth) * 0.8vmin);
         width: calc(var(--depth) * 0.5vmin);
-        background: #F92C85;
+        background: #f92c85cf;
         bottom: 10%;
         left: 50%;
         transform-origin: 50% 100%;
-        transform: translate(-40%, 0) rotateX(90deg) ;
+        transform: translate(-40%, 0) rotateX(70deg) ;
       }
       .drawer__panel--obj5:hover {
         box-shadow: 0 0 4px rgb(28, 28, 28);
@@ -459,11 +460,11 @@ http://www.tooplate.com/view/2085-neuron
         box-shadow: 0 0 3px rgb(28, 28, 28);
         height: calc(var(--depth) * 0.8vmin);
         width: calc(var(--depth) * 0.5vmin);
-        background: #79a1ce;
+        background: #79a1cec3;
         bottom: 10%;
         left: 50%;
         transform-origin: 50% 100%;
-        transform: translate(-50%, 0) rotateX(90deg);
+        transform: translate(-50%, 0) rotateX(70deg);
       }
       details {
         position: absolute;
@@ -507,6 +508,115 @@ http://www.tooplate.com/view/2085-neuron
         left: 50%;
         transform: translate3d(-50%, -50%, 0.5vmin);
       }
+
+
+
+.modal {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 112.8%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(77, 77, 77, .7);
+  transition: all .6s;
+}
+
+.modal:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__content {
+  border-radius: 4px;
+  position: relative;
+  width: 60%;
+  height: 95%;
+  max-width: 90%;
+  background: #FDF5DF;
+  padding: 1em 2em;
+  overflow:auto;
+}
+
+.modal__footer {
+  text-align: right;
+  a {
+    color: #585858;
+  }
+  i {
+    color: #d02d2c;
+  }
+}
+.modal__close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  transform: scale(2.5);
+  color: #585858;
+  text-decoration: none;
+}
+.button-54 {
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #F92C85;
+  cursor: pointer;
+  border: 3px solid;
+  margin-top: 5px;
+  margin-right: 8px;
+  margin-bottom: 10px;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.button-55 {
+
+font-family: "Open Sans", sans-serif;
+font-size: 16px;
+letter-spacing: 2px;
+text-decoration: none;
+text-transform: uppercase;
+color: #5EBEC4;
+cursor: pointer;
+border: 3px solid;
+margin-top: 5px;
+margin-right: 8px;
+margin-bottom: 10px;
+padding: 0.25em 0.5em;
+box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+position: relative;
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+}
+
+.button-54:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .button-54 {
+    padding: 0.25em 0.75em;
+  }
+}
+
+
+
+      
        </style>
 
 
@@ -539,7 +649,7 @@ http://www.tooplate.com/view/2085-neuron
             <div class="drawer__panel drawer__panel--left"></div>
             <div class="drawer__panel drawer__panel--front"></div>
             <div class="drawer__panel drawer__panel--obj2"></div>
-            <div class="drawer__panel drawer__panel--obj" OnClick="location.href ='fokkerplank.html'" style="cursor:pointer;"></div>
+            <div class="drawer__panel drawer__panel--obj" OnClick="location.href ='#demo-modal1'" style="cursor:pointer;"></div>
       
           </div>
         </div>
@@ -554,7 +664,7 @@ http://www.tooplate.com/view/2085-neuron
             <div class="drawer__panel drawer__panel--right"></div>
             <div class="drawer__panel drawer__panel--left"></div>
             <div class="drawer__panel drawer__panel--front"></div>
-            <div class="drawer__panel drawer__panel--obj3" OnClick="location.href ='igem.html'" style="cursor:pointer;"></div>
+            <div class="drawer__panel drawer__panel--obj3" OnClick="location.href ='#demo-modal2'" style="cursor:pointer;"></div>
           </div>
         </div>
         <div class="chest__drawer drawer" data-position="3">
@@ -568,7 +678,7 @@ http://www.tooplate.com/view/2085-neuron
             <div class="drawer__panel drawer__panel--right"></div>
             <div class="drawer__panel drawer__panel--left"></div>
             <div class="drawer__panel drawer__panel--front"></div>
-            <div class="drawer__panel drawer__panel--obj5" OnClick="location.href ='sd.html'" style="cursor:pointer;"></div>
+            <div class="drawer__panel drawer__panel--obj5" OnClick="location.href ='#demo-modal3'" style="cursor:pointer;"></div>
           </div>
         </div>
         <div class="chest__drawer drawer" data-position="4">
@@ -595,7 +705,7 @@ http://www.tooplate.com/view/2085-neuron
             <div class="drawer__panel drawer__panel--right"></div>
             <div class="drawer__panel drawer__panel--left"></div>
             <div class="drawer__panel drawer__panel--front"></div>
-            <div class="drawer__panel drawer__panel--obj4" OnClick="location.href ='seg.html'" style="cursor:pointer;"></div>
+            <div class="drawer__panel drawer__panel--obj4" OnClick="location.href ='#demo-modal4'" style="cursor:pointer;"></div>
           </div>
         </div>
         <div class="chest__drawer_2 drawer" data-position="2">
@@ -610,7 +720,7 @@ http://www.tooplate.com/view/2085-neuron
             <div class="drawer__panel drawer__panel--left"></div>
             <div class="drawer__panel drawer__panel--front"></div>
             <div class="drawer__panel drawer__panel--obj6"></div>
-            <div class="drawer__panel drawer__panel--obj5" OnClick="location.href ='inflam.html'" style="cursor:pointer;"></div>
+            <div class="drawer__panel drawer__panel--obj5" OnClick="location.href ='#demo-modal5'" style="cursor:pointer;"></div>
           </div>
         </div>
         <div class="chest__drawer_2 drawer" data-position="3">
@@ -624,7 +734,7 @@ http://www.tooplate.com/view/2085-neuron
             <div class="drawer__panel drawer__panel--right"></div>
             <div class="drawer__panel drawer__panel--left"></div>
             <div class="drawer__panel drawer__panel--front"></div>
-            <div class="drawer__panel drawer__panel--obj3" OnClick="location.href ='capsids.html'" style="cursor:pointer;"></div>
+            <div class="drawer__panel drawer__panel--obj3" OnClick="location.href ='#demo-modal6'" style="cursor:pointer;"></div>
           </div>
         </div>
         <div class="chest__drawer_2 drawer" data-position="4">
@@ -641,9 +751,143 @@ http://www.tooplate.com/view/2085-neuron
           </div>
         </div>
       </div>
+      
       </section>
 
+    
+    <div id="demo-modal1" class="modal">
+        <div class="modal__content">
+         <h1>Modeling images as dynamic systems</h1>
+          <p> By treating time-separated PET images before and after treatment as boundary conditions of the Fokker-Planck equation, the transformation of the tumor habitat throughout the course of treatment can be modeled. 
+            Here, the initial condition (pre-treatment) is an excited state and the final condition (post-treatment) is an equilibrium state. The iamge can then be modeled as a dynamic system where each pixel is propagated according to the Fokker-Planck equation. 
+              </p>
+                            
+                  
+                   <div class="blog-post-image">
+                        <center>
+                            <img src="images/Screen Shot 2022-11-25 at 1.04.51 AM.png" style = "width: 40%; height: 30vh" class="center"/>
+                        </center>
+                  </div>
+                  <br>
+                  <p><b>Characterized volumetric tumor habitats that occur througout treatment.</b> Four different habitat clusters visualized. <br> </br>  </p>
+                  <a href="images/ECEinde - Je copy.pdf" class="button-54">See poster presentation</a> 
+                 <br><br>
+                 <a href="about.html" class="button-55"> < Go back </a> 
+                 
 
+            <a href="#" class="modal__close">&times;</a>
+        </div>
+    </div>
+
+    <div id="demo-modal2" class="modal">
+      <div class="modal__content">
+       <h1>High-Throuput Organoid Drug Efficacy Screening Platform</h1>
+       <p>Clinical treatment of glioblastoma, a disease that kills over 10,000 Americans annually, is limited by the lack of a scalable, physiologically-relevant model for testing therapeutics. Duke iGEM is developing NODES, a high-throughput organoid-based drug screening platform to characterize treatment efficacy in common glioma variants. 
+        We designed a non-invasive reporter device that quantifies the drug response of mutation-specific glioma cells in a mini-brain co-culture model, grown in a droplet-based system. Additionally, we modeled our reporter system, which detects oncometabolite levels throughout brain tumor development, to improve device characteristics and developed a machine-learning based image analysis pipeline for organoid screening. To identify the social and ethical implications of our work, we interviewed patients, clinicians, and other stakeholders and integrated their feedback into our design. By recapitulating the brain microenvironment, NODES has the potential to accurately characterize drug responses, offering new hope to patients in their fight against this lethal disease. </p>
+
+                          
+                
+                 <div class="blog-post-image">
+                      <center>
+                        <img src="images/igem.png" style = "width: 60%; height: 30vh" class="center"/>                      </center>
+                </div>
+                <br>
+                <p><b>Combining microfluidics, synthetic biology, tissue engineering, and machine learning to tackle efficient drug screening.</b><br> </br>  </p>
+                <a href="https://2021.igem.org/Team:Duke" class="button-54">Visit the full project site</a> 
+               <a href="https://video.igem.org/w/ekCMbs3JEZjD4oYYYLUAK9" class="button-54">Watch project video</a> 
+               <br><br>
+               <a href="about.html" class="button-55"> < Go back </a> 
+                <br><br>
+          <a href="#" class="modal__close">&times;</a>
+      </div>
+  </div>
+
+  <div id="demo-modal3" class="modal">
+    <div class="modal__content">
+     <h1>DL-based image segmentation and reconstruction pipeline</h1>
+     <p>Sharing deep neural networks and testing the performance of trained networks typically involve a major initial commitment towards one algorithm, before knowing how the network will perform on a different dataset. The major purpose for developng a DL based segmentation tool is to allow immediate access to experiment with AI for image segmentation and the ability to test different trained models near-instantaneously.
+      The model is pretrained on segmentation tasks for electron microscopy, X-ray microCT and light microscopy data. Through intensive analysis of SBEM and EM data, we were able to track and reconstruct subcellular organelles within neurons, especially focused on interactions between ER and mitochondria. Collectively, our results on the analysis of ER presence and networks within a neuron advances our knowledge on the structural interpretation of organization and interactions of ER in neurons and its significance in cell physiology.</p>
+ 
+              
+               <div class="blog-post-image">
+                    <center>
+                      <img src="images/nca.png" style = "width: 80%; height: 80%" class="center">              </div>
+              <br>
+              <p><b>DL-based image segmentation tool.</b> </p>
+              <br>
+                <a href="https://www.biorxiv.org/content/10.1101/2020.03.26.010660v1" class="button-54">Read Manuscript</a> 
+                <a href="https://academicconnections.ucsd.edu/_files/research-scholars-project-archive/2017/jj.pdf" class="button-54">See Poster Presentation</a>
+                <br><br>
+               <a href="about.html" class="button-55"> < Go back </a> 
+                <br><br>
+        <a href="#" class="modal__close">&times;</a>
+    </div>
+</div>
+
+
+<div id="demo-modal4" class="modal">
+  <div class="modal__content">
+   <h1>Network Optimization with Limited Bioimage Data for Robust Semantic Segmentation</h1>
+   <p>Bioimage segmentation is a common but challenging task, especially in dealing with complex biological properties due to closely packed structures, high variation in shapes and sizes, and complex morphology.
+    While deep learning provides an opportunity to tackle previously intractable bioimage analysis tasks, large amounts of annotated data is generally required to train a reliable network.
+    However, curation of a sizable and diverse training dataset is labor intensive and challenging, which limits the development of high accuracy segmentation models on such datasets. 
+    Here we demonstrate that deep learning with adequate framework can be effectively used to tackle challenging computer vision analysis tasks, especially when training data is sparse.</p>
+
+            
+             <div class="blog-post-image">
+                  <center>
+                    <img src="images/optimization.png" style = "width: 60%; height: 30vh" class="center"/></div>
+                    <br>
+            <p><b>DL-based segmentation and 3D reconstruction</b> 3D analysis allows quantitative measurement extraction even from highly sparse and complex data.<br> </br>  </p>
+                   
+            <a href="images/Network Optimization with Limited Bioimage Data for Robust Semantic Segmentation.pdf" class= "button-54">See Poster Presentation</a>
+            <br><br>
+             <a href="about.html" class="button-55"> < Go back </a> 
+              <br><br>
+      <a href="#" class="modal__close">&times;</a>
+  </div>
+</div>
+
+
+
+<div id="demo-modal5" class="modal">
+  <div class="modal__content">
+   <h1>Automatized pathomic feature extraction tool for renal biopsy data</h1>
+   <p>Quantification of inflammation has always been tricky due to the morphological heterogeneity of inflammatory cells and the subjectivity of the physician performing the operation. Therefore, the development of an automatized segmentation tool for inflammation is crucial in the analysis of biopsy data.
+    Following the segmentation, pathomic feature extraction (e.g. spatial and structural analysis) can be performed for further analysis. </p>
+        
+             <div class="blog-post-image">
+                  <center>
+                    <img src="images/inflammation.png" style = "width: 40%" class="center"/>
+                  </div>
+            <br>
+            <p><b>DL-based segmentation of inflammatory cells in biopsy data</b> Inflammatory cells are segmented from H&E scans and overlayed. Following the segmentation, further analysis can be performed to extract additional pathomic features.<br> </br>  </p>
+               <br>
+             <a href="about.html" class="button-55"> < Go back </a> 
+              <br><br>
+      <a href="#" class="modal__close">&times;</a>
+  </div>
+</div>
+
+<div id="demo-modal6" class="modal">
+  <div class="modal__content">
+   <h1>Mathematical and computational analysis of the structure of viral capsids</h1>
+   <p> With the capsid, the viral protein shell, viruses conceal their genetic material and can slip inside the host's body (like a Trojan horse!). The goal of the project was to create an applicable structural model of the proteins that compose the capsid to better understand the viral life cycle and infection mechanism.
+    In order to streamline the process, an importer function to read the protein data from the protein databank (RCSB PDB) was developed. The closeness of the obtained idealized tilings to the structures of considered capsids shows that the proposed approach is general for many structures of small and medium-sized viruses. Such tilings provides a general idea about quasi-equivalence of proteins, thus simplify the internal structure of protein molecules and viral genome. Our model provides a better insight into the protein structures of viral capsid, enabling a further research on virus models that do not comply to the conventional Caspar-and-Klug model. </p>
+   
+             <div class="blog-post-image">
+                  <center>
+                    <img src="images/models.png"  style = "width: 50%; heigt: 50vh" class="center"/>
+                  </div>
+            <br>
+            <p><b>Structural patterns of viral capsid subunits.</b> Model applied to five different types of icosahedral viruses - 3J3I(T=1), 2VF1(T=2), 1JS9(T=3)<br> </br>  </p>
+                <a href="https://community.wolfram.com/groups/-/m/t/1378744?p_p_auth=Mj0MOF08" class="button-54">Read More</a> 
+                <br><br>
+            <a href="about.html" class="button-55"> < Go back </a> 
+              <br><br>
+      <a href="#" class="modal__close">&times;</a>
+  </div>
+</div>
 
 <!-- Back top -->
 <a href="#back-top" class="go-top"><i class="fa fa-angle-up"></i></a>
