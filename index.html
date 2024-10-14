@@ -35,8 +35,15 @@ http://www.tooplate.com/view/2085-neuron
      <style>    @import url(https://fonts.googleapis.com/css?family=Raleway:300,700);
      p {
     text-align: justify;
+    
 }
 
+hr {
+     border: none;
+     border-top: 1px solid #c7c7c7; /* Set the color and thickness of the line */
+     width: 80%; /* Set the width to 80% of the page */
+     margin: auto; /* Center the line */
+ }
 
 
 /* CSS */
@@ -154,7 +161,6 @@ http://www.tooplate.com/view/2085-neuron
                                  <li> <p><a href="https://www.linkedin.com/in/jihyeon-je/"><b>LinkedIn: Jihyeon Je</b></a></p></li>
                                  <li> <p><a href="mailto: jihyeonj@stanford.edu"><b>Email: jihyeonj@stanford.edu</b></a></p></li>
                               </ul><br><br>
-                              <img src="images/cake.png" style="width: 30%; height: 30%;" ALIGN="right" />
                               <a href="about.html" class="button-54">Read more about my work</a>
                          </div>
                     </div>
@@ -165,7 +171,85 @@ http://www.tooplate.com/view/2085-neuron
           </div>
      </div>
 </section>
+<hr>
+<div class="blog-post-title">
+     <div class="blog-post-title">
+          <br>
+          <h1>Selected works</a></h1>
 
+     </div>
+   </div>
+   <br><br>
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Selected Publications</title>
+       <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+       <!-- First publication -->
+       <div class="publication-panel" style="display: flex; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px;">
+           <!-- Conference badge at the top -->
+           <div class="conference-badge" style="background-color: #42c5f5; font-size: 12px; margin-bottom: 5px;">SIGGRAPH ASIA 2024</div>
+           
+           <div class="publication-content" style="display: flex; align-items: stretch; justify-content: space-between; width: 100%;"> <!-- Flex container for image and text -->
+               <img src="images/lang-teaser.png" alt="Publication Image" class="publication-image" style="height: auto; max-height: 100%; object-fit: contain; width: 30%;">
+   
+               <div class="publication-details" style="flex: 1; padding-left: 20px; max-width: 65%;"> <!-- Adjust width of the text container -->
+                   <h3 style="font-size: 16px; margin: 0; line-height: 1;">Robust Symmetry Detection via Riemannian Langevin Dynamics</h3>
+                   <p style="font-size: 12px; margin: 0; line-height: 1;"><b>Jihyeon Je</b><sup>*</sup>, Jiayi Liu<sup>*</sup>, Guandao Yang<sup>*</sup>, Boyang Deng<sup>*</sup>, Shengqu Cai, Gordon Wetzstein, Or Litany, Leonidas Guibas</p>
+                   <p class="description" style="font-size: 12px; margin: 0; line-height: 1;">Connecting Langevin dynamics with Meanshift for more robust symmetry detection on 2D and 3D shapes</p>
+                   <div class="publication-links" style="margin-top: 5px;">
+                       <a href="https://symmetry-langevin.github.io/" class="button" style="font-size: 12px; padding: 4px 8px;">Project Page</a>
+                       <a href="https://arxiv.org/abs/2410.02786" class="button" style="font-size: 12px; padding: 4px 8px;">ARXIV</a>
+                       <a href="./images/saconferencepapers24-125.pdf" class="button" style="font-size: 12px; padding: 4px 8px;">PDF</a>
+                   </div>
+               </div>
+           </div>
+       </div>
+   
+       <!-- Second publication -->
+       <div class="publication-panel" style="display: flex; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px;">
+           <div class="conference-badge" style="background-color: #6a4ac4; font-size: 12px; margin-bottom: 5px;">Medical Physics 2024</div>
+           
+           <div class="publication-content" style="display: flex; align-items: stretch; justify-content: space-between; width: 100%;"> <!-- Flex container for image and text -->
+               <img src="images/fokker-teaser.png" alt="Publication Image" class="publication-image" style="height: auto; max-height: 100%; object-fit: contain; width: 30%;">
+   
+               <div class="publication-details" style="flex: 1; padding-left: 20px; max-width: 65%;"> <!-- Adjust width of the text container -->
+                   <h3 style="font-size: 16px; margin: 0; line-height: 1;">Radiomics on spatial-temporal manifolds via Fokker-Planck dynamics</h3>
+                   <p style="font-size: 12px; margin: 0; line-height: 1;">Jack Stevens, Breylon Riley, <b>Jihyeon Je</b>, Yuan Gao, Chunahao Wang, Yvonne Mowery, David Brizel, Fang-Fang Yin, Jian-Guo Liu, Kyle Lafata</p>
+                   <p class="description" style="font-size: 12px; margin: 0; line-height: 1;">Time-series image modeling for sparse inputs to track radiomic evolution of oropharyngeal cancer in CT / MRI scans.</p>
+                   <div class="publication-links" style="margin-top: 5px;">
+                       <a href="https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.16905" class="button" style="font-size: 12px; padding: 4px 8px;">AAPM</a>
+                       <a href="./images/Medical Physics - 2024 - Stevens - Radiomics on spatial‐temporal manifolds via Fokker Planck dynamics.pdf" class="button" style="font-size: 12px; padding: 4px 8px;">PDF</a>
+                   </div>
+               </div>
+           </div>
+       </div>
+   
+       <!-- Third publication -->
+       <div class="publication-panel" style="display: flex; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px;">
+           <div class="conference-badge" style="background-color: #60bf24; font-size: 12px; margin-bottom: 5px;">Preprint</div>
+           
+           <div class="publication-content" style="display: flex; align-items: stretch; justify-content: space-between; width: 100%;"> <!-- Flex container for image and text -->
+               <img src="images/cdeep-teaser.png" alt="Publication Image" class="publication-image" style="height: auto; max-height: 100%; object-fit: contain; width: 30%;">
+   
+               <div class="publication-details" style="flex: 1; padding-left: 20px; max-width: 65%;"> <!-- Adjust width of the text container -->
+                   <h3 style="font-size: 16px; margin: 0; line-height: 1;">CDeep3M–preview: Online segmentation using the deep neural network model zoo</h3>
+                   <p style="font-size: 12px; margin: 0; line-height: 1;">Mathias Haberl, Willy Wong, Sean Penticoff, <b>Jihyeon Je</b>, Matthew Madany, Adrian Borchardt, Daniela Boasa, Steven Peltier, Mark Ellisman</p>
+                   <p class="description" style="font-size: 12px; margin: 0; line-height: 1;">Prerained modelzoo and user interface for bioimage segmentation</p>
+                   <div class="publication-links" style="margin-top: 5px;">
+                       <a href="https://www.biorxiv.org/content/10.1101/2020.03.26.010660v1" class="button" style="font-size: 12px; padding: 4px 8px;">bioRxiv</a>
+                       <a href="./images/2020.03.26.010660v1.full.pdf" class="button" style="font-size: 12px; padding: 4px 8px;">PDF</a>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </body>
+
+   <br><br><br>
 <!-- Footer Section -->
 
 

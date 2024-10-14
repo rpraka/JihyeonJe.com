@@ -34,7 +34,12 @@ http://www.tooplate.com/view/2085-neuron
 <body>
      <style>    
       @import url(https://fonts.googleapis.com/css?family=Raleway:300,700);
-
+        hr {
+            border: none;
+            border-top: 1px solid #c7c7c7; /* Set the color and thickness of the line */
+            width: 80%; /* Set the width to 80% of the page */
+            margin: auto; /* Center the line */
+        }
     
 
 /* CSS */
@@ -77,740 +82,126 @@ http://www.tooplate.com/view/2085-neuron
 </div>
 
 
-<!-- Blog Section -->
-
-
 <div class="blog-post-title">
-  <h1>Selected works</a></h1> 
-  <center><p>I left the cabinet unlocked... maybe you can find some files inside to browse ;) </p></center>
-
-  <br><br><br><br><br><br>
+  <h1>Publications</a></h1> 
 </div>
+<br><br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<hr>
+<br>
+<h1 style="font-size: 16px; margin: 0; line-height: 1; color: #000000;">Journal submissions</h1>
 
-</div>
-
-<section id="about">
-       <style>
-        *,
-    *:after,
-    *:before {
-    box-sizing: border-box;
-    transform-style: preserve-3d;
-    will-change: transform;
-    }
-
-    :root {
-        --hover: 0.05;
-        --default: 0.01;
-        --limit: 0.9;
-        --height: 30;
-        --width: 20;
-        --depth: 16;
-        --frame: 1;
-        --handle: #f3e2bc;
-        --hue: 10;
-        --saturation: 0%;
-        --drawer-one: #fafafa;
-        --drawer-two: #e6e6e67d;
-        --drawer-three: #dddcdc;
-        --drawer-four: #e6e6e6;
-        --unit-one: #e4debc;
-        --unit-two: #47949a;
-        --unit-three: #49999f;
-        --unit-four: #5EBEC4;
-        --transition: 0.2s;
-      }
-
-      body {
-        display: grid;
-        place-items: center;
-      }
-      .chest {
-        height: calc(var(--height) * 1vmin);
-        transform: scale(1.4) translate3d(0, 0, 50vmin) rotateX(-25deg) rotateY(32deg);
-        width: calc(var(--width) * 1vmin);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #115816;
-        justify-content: center;
-      }
-      .chest__panel {
-        position: absolute;
-      }
-      .chest__panel--back {
-        background: var(--unit-two);
-      }
-      .chest__panel--back,
-      .chest__panel--front {
-        height: 100%;
-        width: 100%;
-        transform: translate3d(0, 0, calc(var(--depth) * var(--coefficient)));
-      }
-      .chest__panel--front-frame {
-        height: 100%;
-        width: 100%;
-        border-bottom-width: calc(var(--frame) * 2vmin);
-        transform: translate3d(0, 0, 0);
+<body>
+    <!-- First publication -->
+    <div class="publication-panel" style="display: flex; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px;">
+        <!-- Conference badge at the top -->
+        <div class="conference-badge" style="background-color: #42c5f5; font-size: 12px; margin-bottom: 5px;">SIGGRAPH ASIA 2024</div>
         
-      }
-      .chest__panel--front-frame:after,
-      .chest__panel--front-frame:before {
-        content: '';
-        background: var(--unit-one);
-        height: calc(var(--frame) * 1.5vmin);
-        width: calc(var(--width) * 2vmin);
-        position: absolute;
-        transform: translate(-50%, -50%);
-        left: 50%;
-      }
-      .chest__panel--front-frame:after {
-        top: calc(100 / 4 * 1.01%);
-        
-      }
-      .chest__panel--front-frame:before {
-        top: calc(100 / 4 * 2.01%);
-      }
-      .chest__panel--front {
-        --coefficient: 0.5vmin;
-      }
-      .chest__panel--back {
-        --coefficient: -0.5vmin;
-      }
-      .chest__panel--left{
-        height: 100%;
-        left: 0%;
-        width: calc(var(--depth) * 1vmin);
-        background: var(--unit-three);
-        transform: translate(-50%, 0) rotateY(90deg) translate3d(0, 0, calc(var(--width) * var(--coefficient)));
-      }
-      .chest__panel--right {
-        height: 100%;
-        left: 100%;
-        width: calc(var(--depth) * 1vmin);
-        background: var(--unit-three);
-        transform: translate(-50%, 0) rotateY(90deg) translate3d(0, 0, calc(var(--width) * var(--coefficient)));
-      }
-      .chest__panel--right {
-        width: calc((var(--depth) * 1vmin) + 2px);
-        --coefficient: 0.5vmin;
-      }
-      .chest__panel--left {
-        --coefficient: -0.5vmin;
-      }
-      .chest__panel--top,
-      .chest__panel--bottom {
-        height: calc(var(--depth) * 1vmin);
-        width: calc(var(--width) * 1vmin);
-        background: var(--unit-two);
-      }
-      .chest__panel--top {
-        top: 0;
-        width: calc((var(--width) * 2vmin) + 0.1vmin);
-        height: calc((var(--depth) * 1vmin) + 0.1vmin);
-        left: 50%;
-        transform: translate(-50%, -50%) rotateX(-90deg);
-      }
-      .chest__panel--bottom {
-        bottom: 0;
-        width: calc((var(--width) * 2vmin) + 0.1vmin);
-        height: calc((var(--depth) * 1vmin) + 0.1vmin);
-        left: 50%;
-        transform: translate(-50%, 50%) rotateX(-90deg);
-      }
-      
-      .chest__panel--out{
-        height: 25%;
-        left: 50%;
-        width: 100%;
-        border: calc(var(--frame) * 1vmin) solid var(--unit-one);
-        transform: translate3d(0, 0, 0);
-      }
-      .chest__panel--out[data-position="1"] {
-        height: 28%;
-      }
-      .chest__panel--out[data-position="2"] {
-        height: 27%;
-        top: 25%;
-      }
-      .chest__panel--out[data-position="3"] {
-        top: 50%;
-      }
-      .chest__panel--out[data-position="4"] {
-        height:26%;
-        top: 75%;
-      }
-      
-      .chest__panel--out2{
-        height: 25%;
-        left: -50%;
-        width: 100%;
-        border: calc(var(--frame) * 1vmin) solid var(--unit-one);
-        transform: translate3d(0, 0, 0);
-      }
-      .chest__panel--out2[data-position="1"] {
-        height: 28%;
-      }
-      .chest__panel--out2[data-position="2"] {
-        height: 27%;
-        top: 25%;
-      }
-      .chest__panel--out2[data-position="3"] {
-        top: 50%;
-      }
-      .chest__panel--out2[data-position="4"] {
-        height: 26%;
-        top: 75%;
-      }
-      
-      
-      
-      .chest__drawer {
-        --drawer-height: calc((var(--height) - (5 * var(--frame))) / 4);
-        position: absolute;
-        top: var(--top, 0);
-        left: 0%;
-        height: calc(var(--drawer-height) * 1vmin);
-        width: calc((var(--width) - (2 * var(--frame))) * 1vmin);
-        transform: translate3d(-50%, 0, calc((var(--depth) * 0.5vmin) + 0.01vmin));
-      }
-      .chest__drawer[data-position="1"] {
-        --index: 1;
-        --top: calc(var(--frame) * 1vmin);
-      }
-      .chest__drawer[data-position="2"] {
-        --index: 2;
-        --top: calc(((2 * var(--frame)) + var(--drawer-height)) * 1vmin);
-      }
-      .chest__drawer[data-position="3"] {
-        --index: 3;
-        --top: calc(((3 * var(--frame)) + (2 * var(--drawer-height))) * 1vmin);
-      }
-      .chest__drawer[data-position="4"] {
-        --index: 4;
-        --top: calc(((4 * var(--frame)) + (3 * var(--drawer-height))) * 1vmin);
-      }
-      .chest__drawer_2 {
-        --drawer-height: calc((var(--height) - (5 * var(--frame))) / 4);
-        position: absolute;
-        top: var(--top, 0);
-        left: 100%;
-        height: calc(var(--drawer-height) * 1vmin);
-        width: calc((var(--width) - (2 * var(--frame))) * 1vmin);
-        transform: translate3d(-50%, 0, calc((var(--depth) * 0.5vmin) + 0.01vmin));
-      }
-      
-      .chest__drawer_2[data-position="1"] {
-        --index: 1;
-        --top: calc(var(--frame) * 1vmin);
-      }
-      .chest__drawer_2[data-position="2"] {
-        --index: 2;
-        --top: calc(((2 * var(--frame)) + var(--drawer-height)) * 1vmin);
-      }
-      .chest__drawer_2[data-position="3"] {
-        --index: 3;
-        --top: calc(((3 * var(--frame)) + (2 * var(--drawer-height))) * 1vmin);
-      }
-      .chest__drawer_2[data-position="4"] {
-        --index: 4;
-        --top: calc(((4 * var(--frame)) + (3 * var(--drawer-height))) * 1vmin);
-      }
-      
-      
-      .drawer__structure {
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-      }
-      .drawer__panel {
-        position: absolute;
-      }
-      .drawer__panel--left,
-      .drawer__panel--right {
-        width: calc(var(--depth) * 1vmin);
-        height: 65%;
-        background: var(--drawer-two);
-        bottom: 1%;
-      }
-      .drawer__panel--left {
-        left: 0;
-        height: 100%;
-        transform-origin: 0 50%;
-        transform: rotateY(90deg);
-      }
-      .drawer__panel--right {
-        right: calc((var(--frame) * 1vmin) + 1px);
-        right: 0;
-        height:100%;
-        transform-origin: 100% 50%;
-        transform: rotateY(-90deg);
-      }
-      .drawer__panel--front {
-        height: calc((var(--drawer-height) + (0.6 * var(--frame))) * 1vmin);
-        width: calc((var(--width) - (0.6 * var(--frame))) * 1vmin);
-        top: 50%;
-        left: 50%;
-        transform: translate3d(-50%, -50%, 1px);
-        background: var(--unit-four);
-      }
-      .drawer__panel--bottom,
-      .drawer__panel--back {
-        width: calc(100% - (2vmin * var(--frame)));
-        width: 100%;
-        height: 100%;
-      }
-      .drawer__panel--bottom {
-        height: calc(var(--depth) * 1vmin);
-        background: var(--drawer-three);
-        bottom: 5%;
-        left: 50%;
-        transform-origin: 50% 100%;
-        transform: translate(-50%, 0) rotateX(90deg);
-      }
-      .drawer__panel--back {
-        height: 90%;
-        background: var(--drawer-one);
-        bottom: 1%;
-        left: 50%;
-        transform: translate3d(-50%, 0, calc(var(--depth) * -1vmin));
-        text-align: center;
-        line-height: calc(var(--drawer-height) * 0.65vmin);
-        font-size: 3vmin;
-        font-weight: bold;
-        font-family: sans-serif;
-      }
-      .drawer__panel--obj {
-        box-shadow: 0 0 1px rgb(28, 28, 28);
-        height: calc(var(--depth) * 0.8vmin);
-        width: calc(var(--depth) * 0.5vmin);
-        background: #f2db59b8;
-        bottom: 20%;
-        left: 50%;
-        transform-origin: 50% 100%;
-        transform: translate(-50%, 0) rotateX(70deg);
-      }
-      
-      .drawer__panel--obj:hover {
-        box-shadow: 0 0 1px rgb(28, 28, 28);
-        transform-origin: 50% 100%;
-        transform: scale(1.02) translate(-50%, 0) rotateX(45deg);
-        margin-top: -10px;
-      }
-      
-      .drawer__panel--obj2 {
-        box-shadow: 0 0 1px rgb(28, 28, 28);
-        height: calc(var(--depth) * 0.8vmin);
-        width: calc(var(--depth) * 0.5vmin);
-        background: #f92c85c5;
-        bottom: 10%;
-        left: 50%;
-        transform-origin: 50% 100%;
-        transform: translate(-40%, 0) rotateX(70deg) rotateZ(1deg);
-      }
-      .drawer__panel--obj3 {
-        box-shadow: 0 0 1px rgb(28, 28, 28);
-        height: calc(var(--depth) * 0.8vmin);
-        width: calc(var(--depth) * 0.5vmin);
-        background: #f2d73eb2;
-        bottom: 10%;
-        left: 50%;
-        transform-origin: 50% 100%;
-        transform: translate(-50%, 0) rotateX(70deg) rotateZ(-1deg);
-      }
-      
-      .drawer__panel--obj3:hover {
-        box-shadow: 0 0 1px rgb(28, 28, 28);
-        transform-origin: 50% 100%;
-        transform: scale(1.02) translate(-50%, 0) rotateX(45deg);
-        margin-top: -10px;
-      }
-      .drawer__panel--obj4 {
-        box-shadow: 0 0 1px rgb(28, 28, 28);
-        height: calc(var(--depth) * 0.8vmin);
-        width: calc(var(--depth) * 0.5vmin);
-        background: #79a1cec0;
-        bottom: 10%;
-        left: 50%;
-        transform-origin: 50% 100%;
-        transform: translate(-50%, 0) rotateX(70deg) ;
-      }
-      .drawer__panel--obj4:hover {
-        box-shadow: 0 0 1px rgb(28, 28, 28);
-        transform-origin: 50% 100%;
-        transform: scale(1.02) translate(-50%, 0) rotateX(45deg);
-        margin-top: -10px;
-      }
-      .drawer__panel--obj5 {
-        box-shadow: 0 0 1px rgb(28, 28, 28);
-        height: calc(var(--depth) * 0.8vmin);
-        width: calc(var(--depth) * 0.5vmin);
-        background: #f92c85cf;
-        bottom: 10%;
-        left: 50%;
-        transform-origin: 50% 100%;
-        transform: translate(-40%, 0) rotateX(70deg) ;
-      }
-      .drawer__panel--obj5:hover {
-        box-shadow: 0 0 1px rgb(28, 28, 28);
-        transform-origin: 50% 100%;
-        transform: scale(1.02) translate(-50%, 0) rotateX(45deg);
-        margin-top: -10px;
-      }
-      .drawer__panel--obj6 {
-        box-shadow: 0 0 1px rgb(28, 28, 28);
-        height: calc(var(--depth) * 0.8vmin);
-        width: calc(var(--depth) * 0.5vmin);
-        background: #79a1cec3;
-        bottom: 10%;
-        left: 50%;
-        transform-origin: 50% 100%;
-        transform: translate(-50%, 0) rotateX(70deg);
-      }
-      details {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
-        cursor: pointer;
-        outline: transparent;
-      }
-      details:hover:not([open]),
-      details:hover:not([open]) + .drawer__structure {
-        --open: var(--hover);
-        
-      }
-      details,
-      .drawer__structure {
-        transition: transform var(--transition);
-        transform: translate3d(0, 0, calc((var(--open, var(--default)) * var(--depth)) * 1vmin)) ;
-      }
-      details[open],
-      .drawer__structure[open],
-      details[open] + .drawer__structure,
-      .drawer__structure[open] + .drawer__structure {
-        --open: var(--limit);
-      }
-      summary {
-        outline: transparent;
-        height: 100%;
-        width: 100%;
-      }
-      summary::-webkit-details-marker {
-        display: none;
-      }
-      summary:after {
-        content: '';
-        position: absolute;
-        background: linear-gradient(var(--handle), var(--handle)) 50% 15%/40% 8% no-repeat, transparent;
-        height: 110%;
-        width: 110%;
-        top: 50%;
-        left: 50%;
-        transform: translate3d(-50%, -50%, 0.5vmin);
-        
-      }
+        <div class="publication-content" style="display: flex; align-items: stretch; justify-content: space-between; width: 100%;"> <!-- Flex container for image and text -->
+            <img src="images/lang-teaser.png" alt="Publication Image" class="publication-image" style="height: auto; max-height: 100%; object-fit: contain; width: 30%;">
 
-
-
-.modal {
-  visibility: hidden;
-  opacity: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 100vh;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(77, 77, 77, .7);
-  transition: all .6s;
-}
-
-.modal:target {
-  visibility: visible;
-  opacity: 1;
-}
-
-.modal__content {
-  border-radius: 4px;
-  position: relative;
-  width: 60%;
-  height: 95%;
-  max-width: 90%;
-  background: #FDF5DF;
-  padding: 1em 2em;
-  overflow:auto;
-}
-
-.modal__footer {
-  text-align: right;
-  a {
-    color: #585858;
-  }
-  i {
-    color: #d02d2c;
-  }
-}
-.modal__close {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  transform: scale(2.5);
-  color: #585858;
-  text-decoration: none;
-}
-.button-54 {
-
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  letter-spacing: 2px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #F92C85;
-  cursor: pointer;
-  border: 3px solid;
-  margin-top: 5px;
-  margin-right: 8px;
-  margin-bottom: 10px;
-  padding: 0.25em 0.5em;
-  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
-  position: relative;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-.button-55 {
-
-font-family: "Open Sans", sans-serif;
-font-size: 16px;
-letter-spacing: 2px;
-text-decoration: none;
-text-transform: uppercase;
-color: #5EBEC4;
-cursor: pointer;
-border: 3px solid;
-margin-top: 5px;
-margin-right: 8px;
-margin-bottom: 10px;
-padding: 0.25em 0.5em;
-box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
-position: relative;
-user-select: none;
--webkit-user-select: none;
-touch-action: manipulation;
-}
-
-.button-54:active {
-  box-shadow: 0px 0px 0px 0px;
-  top: 5px;
-  left: 5px;
-}
-
-@media (min-width: 768px) {
-  .button-54 {
-    padding: 0.25em 0.75em;
-  }
-}
-
-
-
-      
-       </style>
-
-
-       <div class="chest">
-        <div class="chest__panel chest__panel--back"></div>
-        <div class="chest__panel chest__panel--top"></div>
-        <div class="chest__panel chest__panel--bottom"></div>
-        <div class="chest__panel chest__panel--right"></div>
-        <div class="chest__panel chest__panel--front">
-          <div class="chest__panel chest__panel--out" data-position="1"></div>
-          <div class="chest__panel chest__panel--out" data-position="2"></div>
-          <div class="chest__panel chest__panel--out" data-position="3"></div>
-          <div class="chest__panel chest__panel--out" data-position="4"></div>
-          <div class="chest__panel chest__panel--out2" data-position="1"></div>
-          <div class="chest__panel chest__panel--out2" data-position="2"></div>
-          <div class="chest__panel chest__panel--out2" data-position="3"></div>
-          <div class="chest__panel chest__panel--out2" data-position="4"></div>
-        </div>
-        <div class="chest__panel chest__panel--left"></div>
-        <div class="chest__drawer drawer" data-position="1">
-          <details>
-            <summary></summary>
-          </details>
-          <div class="drawer__structure">
-            <div class="drawer__panel drawer__panel--back">
-              <span style="font-size: 35%; float:right; color:#404040"> Images as Dynamics Systems &nbsp&nbsp  </span>
+            <div class="publication-details" style="flex: 1; padding-left: 20px; max-width: 65%;"> <!-- Adjust width of the text container -->
+                <h3 style="font-size: 16px; margin: 0; line-height: 1;">Robust Symmetry Detection via Riemannian Langevin Dynamics</h3>
+                <p style="font-size: 12px; margin: 0; line-height: 1;"><b>Jihyeon Je</b><sup>*</sup>, Jiayi Liu<sup>*</sup>, Guandao Yang<sup>*</sup>, Boyang Deng<sup>*</sup>, Shengqu Cai, Gordon Wetzstein, Or Litany, Leonidas Guibas</p>
+                <p class="description" style="font-size: 12px; margin: 0; line-height: 1;">Connecting Langevin dynamics with Meanshift for more robust symmetry detection on 2D and 3D shapes</p>
+                <div class="publication-links" style="margin-top: 5px;">
+                    <a href="https://symmetry-langevin.github.io/" class="button" style="font-size: 12px; padding: 4px 8px;">Project Page</a>
+                    <a href="https://arxiv.org/abs/2410.02786" class="button" style="font-size: 12px; padding: 4px 8px;">ARXIV</a>
+                    <a href="./images/saconferencepapers24-125.pdf" class="button" style="font-size: 12px; padding: 4px 8px;">PDF</a>
+                </div>
             </div>
-            <div class="drawer__panel drawer__panel--bottom"></div>
-            <div class="drawer__panel drawer__panel--right"></div>
-            <div class="drawer__panel drawer__panel--left"></div>
-            <div class="drawer__panel drawer__panel--front"></div>
-            <div class="drawer__panel drawer__panel--obj2"></div>
-            <div class="drawer__panel drawer__panel--obj" OnClick="location.href ='#demo-modal1'" style="cursor:pointer;"></div>
-      
-          </div>
         </div>
-        <div class="chest__drawer drawer" data-position="2">
-          <details>
-            <summary></summary>
-          </details>
-          <div class="drawer__structure">
-            <div class="drawer__panel drawer__panel--back"><span style="font-size: 35%; float:right; color:#404040"> Organoid Drug Screening&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </span>
-            </div>
-            <div class="drawer__panel drawer__panel--bottom"></div>
-            <div class="drawer__panel drawer__panel--right"></div>
-            <div class="drawer__panel drawer__panel--left"></div>
-            <div class="drawer__panel drawer__panel--front"></div>
-            <div class="drawer__panel drawer__panel--obj3" OnClick="location.href ='#demo-modal2'" style="cursor:pointer;"></div>
-          </div>
-        </div>
-        <div class="chest__drawer drawer" data-position="3">
-          <details>
-            <summary></summary>
-          </details>
-          <div class="drawer__structure">
-            <div class="drawer__panel drawer__panel--back"><span style="font-size: 35%; float:right; color:#404040"> 3D Segmentation and Modeling &nbsp</span>
-            </div>
-            <div class="drawer__panel drawer__panel--bottom"></div>
-            <div class="drawer__panel drawer__panel--right"></div>
-            <div class="drawer__panel drawer__panel--left"></div>
-            <div class="drawer__panel drawer__panel--front"></div>
-            <div class="drawer__panel drawer__panel--obj5" OnClick="location.href ='#demo-modal3'" style="cursor:pointer;"></div>
-          </div>
-        </div>
-        <div class="chest__drawer drawer" data-position="4">
-          <details>
-            <summary></summary>
-          </details>
-          <div class="drawer__structure">
-            <div class="drawer__panel drawer__panel--back">
-            </div>
-            <div class="drawer__panel drawer__panel--bottom"></div>
-            <div class="drawer__panel drawer__panel--right"></div>
-            <div class="drawer__panel drawer__panel--left"></div>
-            <div class="drawer__panel drawer__panel--front"></div>
-          </div>
-        </div>
-        <div class="chest__drawer_2 drawer" data-position="1">
-          <details>
-            <summary></summary>
-          </details>
-          <div class="drawer__structure">
-            <div class="drawer__panel drawer__panel--back"><span style="font-size: 35%; float:right; color:#404040"> &nbsp&nbsp&nbsp&nbsp Robust Semantic Segmentation &nbsp&nbsp </span>
-            </div>
-            <div class="drawer__panel drawer__panel--bottom"></div>
-            <div class="drawer__panel drawer__panel--right"></div>
-            <div class="drawer__panel drawer__panel--left"></div>
-            <div class="drawer__panel drawer__panel--front"></div>
-            <div class="drawer__panel drawer__panel--obj4" OnClick="location.href ='#demo-modal4'" style="cursor:pointer;"></div>
-          </div>
-        </div>
-        <div class="chest__drawer_2 drawer" data-position="2">
-          <details>
-            <summary></summary>
-          </details>
-          <div class="drawer__structure">
-            <div class="drawer__panel drawer__panel--back"><span style="font-size: 35%; float:right; color:#404040"> &nbsp&nbsp&nbsp&nbsp Pathomic Feature Extraction &nbsp&nbsp&nbsp&nbsp </span>
-            </div>
-            <div class="drawer__panel drawer__panel--bottom"></div>
-            <div class="drawer__panel drawer__panel--right"></div>
-            <div class="drawer__panel drawer__panel--left"></div>
-            <div class="drawer__panel drawer__panel--front"></div>
-            <div class="drawer__panel drawer__panel--obj6"></div>
-            <div class="drawer__panel drawer__panel--obj5" OnClick="location.href ='#demo-modal5'" style="cursor:pointer;"></div>
-          </div>
-        </div>
-        <div class="chest__drawer_2 drawer" data-position="3">
-          <details>
-            <summary></summary>
-          </details>
-          <div class="drawer__structure">
-            <div class="drawer__panel drawer__panel--back"><span style="font-size: 35%; float:right; color:#404040"> &nbsp Modeling Viral Capsids &nbsp&nbsp&nbsp&nbsp  &nbsp&nbsp&nbsp&nbsp </span>
-            </div>
-            <div class="drawer__panel drawer__panel--bottom"></div>
-            <div class="drawer__panel drawer__panel--right"></div>
-            <div class="drawer__panel drawer__panel--left"></div>
-            <div class="drawer__panel drawer__panel--front"></div>
-            <div class="drawer__panel drawer__panel--obj3" OnClick="location.href ='#demo-modal6'" style="cursor:pointer;"></div>
-          </div>
-        </div>
-        <div class="chest__drawer_2 drawer" data-position="4">
-          <details>
-            <summary></summary>
-          </details>
-          <div class="drawer__structure">
-            <div class="drawer__panel drawer__panel--back">
-            </div>
-            <div class="drawer__panel drawer__panel--bottom"></div>
-            <div class="drawer__panel drawer__panel--right"></div>
-            <div class="drawer__panel drawer__panel--left"></div>
-            <div class="drawer__panel drawer__panel--front"></div>
-          </div>
-        </div>
-      </div>
-      
-      </section>
-
+    </div>
     
-    <div id="demo-modal1" class="modal">
-        <div class="modal__content">
-         <h1>Modeling images as dynamic systems</h1>
-          <p> By treating time-separated PET images before and after treatment as boundary conditions of the Fokker-Planck equation, the transformation of the tumor habitat throughout the course of treatment can be modeled. 
-            Here, the initial condition (pre-treatment) is an excited state and the final condition (post-treatment) is an equilibrium state. The iamge can then be modeled as a dynamic system where each pixel is propagated according to the Fokker-Planck equation. 
-              </p>
-                            
-                  
-                   <div class="blog-post-image">
-                        <center>
-                            <img src="images/Screen Shot 2022-11-25 at 1.04.51 AM.png" style = "width: 40%; height: 30vh" class="center"/>
-                        </center>
-                  </div>
-                  <br>
-                  <p><b>Characterized volumetric tumor habitats that occur througout treatment.</b> Four different habitat clusters visualized. <br> </br>  </p>
-                  <a href="images/ECEinde - Je copy.pdf" class="button-54">See poster presentation</a> 
-                 <br><br>
-                 <a href="about.html" class="button-55"> < Go back </a> 
-                 
+    <!-- Second publication -->
+    <div class="publication-panel" style="display: flex; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px;">
+        <div class="conference-badge" style="background-color: #6a4ac4; font-size: 12px; margin-bottom: 5px;">Medical Physics 2024</div>
+        
+        <div class="publication-content" style="display: flex; align-items: stretch; justify-content: space-between; width: 100%;"> <!-- Flex container for image and text -->
+            <img src="images/fokker-teaser.png" alt="Publication Image" class="publication-image" style="height: auto; max-height: 100%; object-fit: contain; width: 30%;">
 
-            <a href="#" class="modal__close">&times;</a>
+            <div class="publication-details" style="flex: 1; padding-left: 20px; max-width: 65%;"> <!-- Adjust width of the text container -->
+                <h3 style="font-size: 16px; margin: 0; line-height: 1;">Radiomics on spatial-temporal manifolds via Fokker-Planck dynamics</h3>
+                <p style="font-size: 12px; margin: 0; line-height: 1;">Jack Stevens, Breylon Riley, <b>Jihyeon Je</b>, Yuan Gao, Chunahao Wang, Yvonne Mowery, David Brizel, Fang-Fang Yin, Jian-Guo Liu, Kyle Lafata</p>
+                <p class="description" style="font-size: 12px; margin: 0; line-height: 1;">Time-series image modeling for sparse inputs to track radiomic evolution of oropharyngeal cancer in CT / MRI scans.</p>
+                <div class="publication-links" style="margin-top: 5px;">
+                    <a href="https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.16905" class="button" style="font-size: 12px; padding: 4px 8px;">AAPM</a>
+                    <a href="./images/Medical Physics - 2024 - Stevens - Radiomics on spatial‐temporal manifolds via Fokker Planck dynamics.pdf" class="button" style="font-size: 12px; padding: 4px 8px;">PDF</a>
+                </div>
+            </div>
         </div>
     </div>
 
+    <!-- Third publication -->
+    <div class="publication-panel" style="display: flex; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px;">
+        <div class="conference-badge" style="background-color: #60bf24; font-size: 12px; margin-bottom: 5px;">Preprint</div>
+        
+        <div class="publication-content" style="display: flex; align-items: stretch; justify-content: space-between; width: 100%;"> <!-- Flex container for image and text -->
+            <img src="images/cdeep-teaser.png" alt="Publication Image" class="publication-image" style="height: auto; max-height: 100%; object-fit: contain; width: 30%;">
 
-<div id="demo-modal4" class="modal">
-  <div class="modal__content">
-   <h1>Network Optimization with Limited Bioimage Data for Robust Semantic Segmentation</h1>
-   <p>Bioimage segmentation is a common but challenging task, especially in dealing with complex biological properties due to closely packed structures, high variation in shapes and sizes, and complex morphology.
-    While deep learning provides an opportunity to tackle previously intractable bioimage analysis tasks, large amounts of annotated data is generally required to train a reliable network.
-    However, curation of a sizable and diverse training dataset is labor intensive and challenging, which limits the development of high accuracy segmentation models on such datasets. 
-    Here we demonstrate that deep learning with adequate framework can be effectively used to tackle challenging computer vision analysis tasks, especially when training data is sparse.</p>
+            <div class="publication-details" style="flex: 1; padding-left: 20px; max-width: 65%;"> <!-- Adjust width of the text container -->
+                <h3 style="font-size: 16px; margin: 0; line-height: 1;">CDeep3M–preview: Online segmentation using the deep neural network model zoo</h3>
+                <p style="font-size: 12px; margin: 0; line-height: 1;">Mathias Haberl, Willy Wong, Sean Penticoff, <b>Jihyeon Je</b>, Matthew Madany, Adrian Borchardt, Daniela Boasa, Steven Peltier, Mark Ellisman</p>
+                <p class="description" style="font-size: 12px; margin: 0; line-height: 1;">Prerained modelzoo and user interface for bioimage segmentation</p>
+                <div class="publication-links" style="margin-top: 5px;">
+                    <a href="https://www.biorxiv.org/content/10.1101/2020.03.26.010660v1" class="button" style="font-size: 12px; padding: 4px 8px;">bioRxiv</a>
+                    <a href="./images/2020.03.26.010660v1.full.pdf" class="button" style="font-size: 12px; padding: 4px 8px;">PDF</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<br>
+<hr>
+<br>
+<h1 style="font-size: 16px; margin: 0; line-height: 1; color: #000000;">Abstract and poster submissions</h1>
+<body>
+<div class="publication-panel" style="display: flex; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px;">
+    <div class="conference-badge" style="background-color: #a1a1a1; font-size: 12px; margin-bottom: 5px;">SBI2 2021</div>
+    <div class="conference-badge" style="background-color: #e6a029; font-size: 12px; margin-bottom: 5px;">Best poster award</div>
 
-            
-             <div class="blog-post-image">
-                  <center>
-                    <img src="images/optimization.png" style = "width: 60%; height: 30vh" class="center"/></div>
-                    <br>
-            <p><b>DL-based segmentation and 3D reconstruction</b> 3D analysis allows quantitative measurement extraction even from highly sparse and complex data.<br> </br>  </p>
-                   
-            <a href="images/Network Optimization with Limited Bioimage Data for Robust Semantic Segmentation.pdf" class= "button-54">See Poster Presentation</a>
-            <br><br>
-             <a href="about.html" class="button-55"> < Go back </a> 
-              <br><br>
-      <a href="#" class="modal__close">&times;</a>
-  </div>
+    <div class="publication-content" style="display: flex; align-items: stretch; justify-content: space-between; width: 100%;"> <!-- Flex container for image and text -->
+        <img src="images/optimization.png" alt="Publication Image" class="publication-image" style="height: auto; max-height: 100%; object-fit: contain; width: 30%;">
+
+        <div class="publication-details" style="flex: 1; padding-left: 20px; max-width: 65%;"> <!-- Adjust width of the text container -->
+            <h3 style="font-size: 16px; margin: 0; line-height: 1;"> Network Optimization with Limited Bioimage Data for Robust Semantic Segmentation</h3>
+            <p style="font-size: 12px; margin: 0; line-height: 1;"><b>Jihyeon Je</b>, Alice Lucas, David Sterling, Beth Cimini</p>
+            <p class="description" style="font-size: 12px; margin: 0; line-height: 1;">Robust semantic segmentation and 3D reconstruction for volumetric microscopy images</p>
+            <div class="publication-links" style="margin-top: 5px;">
+                <a href="./images/Network Optimization with Limited Bioimage Data for Robust Semantic Segmentation.pdf" class="button" style="font-size: 12px; padding: 4px 8px;">PDF</a>
+            </div>
+        </div>
+    </div>
 </div>
+<div class="publication-panel" style="display: flex; align-items: flex-start; flex-wrap: wrap; margin-bottom: 20px;">
+    <div class="conference-badge" style="background-color: #a1a1a1; font-size: 12px; margin-bottom: 5px;">USCAP 2022</div>
+
+    <div class="publication-content" style="display: flex; align-items: stretch; justify-content: space-between; width: 100%;"> <!-- Flex container for image and text -->
+        <img src="images/newinflam.png" alt="Publication Image" class="publication-image" style="height: auto; max-height: 100%; object-fit: contain; width: 30%;">
+
+        <div class="publication-details" style="flex: 1; padding-left: 20px; max-width: 65%;"> <!-- Adjust width of the text container -->
+            <h3 style="font-size: 16px; margin: 0; line-height: 1;"> Segmentation and Classification of Lymphocytes in the NEPTUNE Digital Kidney Biopsies via PatchSorter</h3>
+            <p style="font-size: 12px; margin: 0; line-height: 1;">Gina Sotolongo, <b>Jihyeon Je</b>, Xiang Li, Yuqi Wang, Jarcy Zee, Bangchen Wang, Yijiang Chen, Tasneem Talawalla, Jeffrey Hodgin,  Anant Madabhushi, Takaya Ozeki, Laura Mariani, Lawrence Holzman, Andrew Janowczyk, Laura Barisoni, Kyle Lafata </p>
+            <p class="description" style="font-size: 12px; margin: 0; line-height: 1;">Segmentation and classification on histology images.</p>
+            <div class="publication-links" style="margin-top: 5px;">
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
+
+<br><br><br><br><br><br>
 
 
-<br><br><br>
+
 
 <!-- Back top -->
 <a href="#back-top" class="go-top"><i class="fa fa-angle-up"></i></a>
